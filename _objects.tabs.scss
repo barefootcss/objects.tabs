@@ -1,0 +1,40 @@
+/* 
+   #tabs
+   ========================================================================== */
+
+/**
+ * The tabs object creates equal-width navigation from a list.
+ *
+ * Usage:
+ *
+ * <ul class="tabs">
+ *     <li><a href="#"></a>
+ *     <li><a href="#"></a>
+ *     <li><a href="#"></a>
+ * </ul>
+ */
+
+.#{$bare-ns}tabs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+
+	> li {
+		> a {
+			display: block;
+		}
+	}
+}
+
+@media (min-width: bareEm($bare-bp-s)) {
+
+	.#{$bare-ns}tabs {
+		> li {
+	        display: table-cell;
+	        text-align: center;
+		}
+	}
+}
