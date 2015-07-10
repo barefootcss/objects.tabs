@@ -52,7 +52,7 @@ The `tabs--m` option applies a medium padding around tabs.
 	
 **tabs--l**
 
-The `tabs--xs` option applies a large padding around tabs.
+The `tabs--l` option applies a large padding around tabs.
 
 	<ul class="o-tabs o-tabs--l">
 		<li><a href="#"></a></li>
