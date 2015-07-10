@@ -1,3 +1,17 @@
+// 
+// Declarations  
+// ========================================================================== 
+
+//
+// Features:
+//
+
+$bare-tabs--xs:					  false !default;
+$bare-tabs--s:					  false !default;
+$bare-tabs--m:					  false !default;
+$bare-tabs--l:					  false !default;
+$bare-tabs--xl:					  false !default;
+
 /* 
    #tabs
    ========================================================================== */
@@ -7,21 +21,21 @@
  *
  * Usage:
  *
- * <ul class="tabs">
- *     <li><a href="#"></a>
- *     <li><a href="#"></a>
- *     <li><a href="#"></a>
+ * <ul class="o-tabs">
+ *     <li><a href="#"></a></li>
+ *     <li><a href="#"></a></li>
+ *     <li><a href="#"></a></li>
  * </ul>
  */
 
-.#{$bare-ns}tabs {
+.o-tabs {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	display: table;
 	table-layout: fixed;
 	width: 100%;
-
+	
 	> li {
 		> a {
 			display: block;
@@ -31,10 +45,91 @@
 
 @media (min-width: bareMedia($bare-bp-s)) {
 
-	.#{$bare-ns}tabs {
+    .o-tabs {
 		> li {
-	        display: table-cell;
-	        text-align: center;
+			display: table-cell;
+			text-align: center;
+		}
+    }
+
+}
+
+// 
+// #tabs--xs 
+// ========================================================================== 
+
+@if ($bare-tabs--xs == true) {
+
+	.o-tabs--xs {
+		> li {
+			> a {
+				padding: bareRem($bare-sp-xs);				
+			}
 		}
 	}
-}
+
+} 
+
+// 
+// #tabs--s
+// ========================================================================== 
+
+@if ($bare-tabs--s == true) {
+
+	.o-tabs--s {
+		> li {
+			> a {
+				padding: bareRem($bare-sp-s);				
+			}
+		}
+	}
+
+} 
+
+// 
+// #tabs--m
+// ========================================================================== 
+
+@if ($bare-tabs--m == true) {
+
+	.o-tabs--m {
+		> li {
+			> a {
+				padding: bareRem($bare-sp-m);				
+			}
+		}
+	}
+
+} 
+
+// 
+// #tabs--l
+// ========================================================================== 
+
+@if ($bare-tabs--l == true) {
+
+	.o-tabs--l {
+		> li {
+			> a {
+				padding: bareRem($bare-sp-l);				
+			}
+		}
+	}
+
+} 
+
+// 
+// #tabs--xl
+// ========================================================================== 
+
+@if ($bare-tabs--xl == true) {
+
+	.o-tabs--xl {
+		> li {
+			> a {
+				padding: bareRem($bare-sp-xl);				
+			}
+		}
+	}
+
+} 
